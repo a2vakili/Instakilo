@@ -33,16 +33,44 @@
 //    arrayOfDescription2= @[@"no-way",@"unbelievable", @"great", @"beauty"];
 //    arrayOfDescription3= @[@"ok!!1", @"fruity", @"unspeakable"];
     
-    arrayOfImages= [NSArray alloc] initWithArray:[@[@"image-1", @"image-2", @"image-5"], @[@"image-6",@"image-3]]
+    arrayOfImages= @[
+                    @[@"image-1", @"image-2", @"image-5"],
+                    @[@"image-6",@"image-3", @"image-10", @"image-4"],
+                    @[@"image-7", @"image-8", @"image-9"]
+                    ];
+    
+    arrayOfDescriptions= @[
+                        @[@"pretty",@"outstanding", @"wow", @"great"],
+                        @[@"no-way",@"unbelievable", @"great", @"beauty"],
+                        @[@"image-7", @"image-8", @"image-9"]
+                        ];
+                        
+    
+    
+    //NSDictionary *dict = @{
+//                           @"key" : @"valye",
+//                           @"key2" : @{
+//                                   @"key" : @"value"
+//                                   }
+//                           
+//                           };
 }
 
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
-    return  3;
+    return  [arrayOfImages count];
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return [arrayOfImages1 count];
+    
+    
+//    NSArray *sectionArray = arrayOfImages[section];
+//    
+//    return [sectionArray count];
+    
+    return [arrayOfImages[section] count];
+    
+    
    
 }
 
@@ -57,7 +85,7 @@
             break;
          case 1:
             myString= @"dream photos";
-            
+            break;
          case 2:
             myString= @"decent Photos";
             break;
@@ -79,18 +107,18 @@
     
     switch (indexPath.section) {
         case 0:
-            [[cell myImage] setImage: [UIImage imageNamed:[arrayOfImages1 objectAtIndex:indexPath.item]]];
-             [[cell photoDescription] setText:[arrayOfDescriptions1 objectAtIndex:indexPath.item]];
+            [[cell myImage] setImage: [UIImage imageNamed:[arrayOfImages[0] objectAtIndex:indexPath.item]]];
+             [[cell photoDescription] setText:[arrayOfDescriptions[0] objectAtIndex:indexPath.item]];
             break;
             
         case 1:
-            [[cell myImage] setImage:[ UIImage imageNamed:[arrayofImages2 objectAtIndex:indexPath.item]]];
-            [[cell photoDescription] setText:[arrayOfDescription2 objectAtIndex:indexPath.item]];
+            [[cell myImage] setImage:[ UIImage imageNamed:[arrayOfImages[1] objectAtIndex:indexPath.item]]];
+            [[cell photoDescription] setText:[arrayOfDescriptions[1] objectAtIndex:indexPath.item]];
             break;
             
         case 2:
-            [[cell myImage] setImage:[ UIImage imageNamed:[arrayofImages3 objectAtIndex:indexPath.item]]];
-            [[cell photoDescription] setText:[arrayOfDescription3 objectAtIndex:indexPath.item]];
+            [[cell myImage] setImage:[ UIImage imageNamed:[arrayOfImages[2] objectAtIndex:indexPath.item]]];
+            [[cell photoDescription] setText:[arrayOfDescriptions[2] objectAtIndex:indexPath.item]];
             
             break;
         default:
