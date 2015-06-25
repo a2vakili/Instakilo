@@ -14,6 +14,8 @@
 		B62FDDC71B3C52CC00E9B88E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B62FDDC61B3C52CC00E9B88E /* Images.xcassets */; };
 		B62FDDCA1B3C52CC00E9B88E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B62FDDC81B3C52CC00E9B88E /* LaunchScreen.xib */; };
 		B62FDDD61B3C52CD00E9B88E /* InstakiloTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B62FDDD51B3C52CD00E9B88E /* InstakiloTests.m */; };
+		B62FDDE11B3C585100E9B88E /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B62FDDE01B3C585100E9B88E /* CustomCell.m */; };
+		B62FDDE41B3C90AA00E9B88E /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B62FDDE31B3C90AA00E9B88E /* HeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		B62FDDCF1B3C52CD00E9B88E /* InstakiloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstakiloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62FDDD41B3C52CD00E9B88E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B62FDDD51B3C52CD00E9B88E /* InstakiloTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstakiloTests.m; sourceTree = "<group>"; };
+		B62FDDDF1B3C585100E9B88E /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		B62FDDE01B3C585100E9B88E /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		B62FDDE21B3C90AA00E9B88E /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
+		B62FDDE31B3C90AA00E9B88E /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,10 @@
 				B62FDDC01B3C52CC00E9B88E /* ViewController.h */,
 				B62FDDC11B3C52CC00E9B88E /* ViewController.m */,
 				B62FDDC31B3C52CC00E9B88E /* Main.storyboard */,
+				B62FDDE21B3C90AA00E9B88E /* HeaderView.h */,
+				B62FDDE31B3C90AA00E9B88E /* HeaderView.m */,
+				B62FDDDF1B3C585100E9B88E /* CustomCell.h */,
+				B62FDDE01B3C585100E9B88E /* CustomCell.m */,
 				B62FDDC61B3C52CC00E9B88E /* Images.xcassets */,
 				B62FDDC81B3C52CC00E9B88E /* LaunchScreen.xib */,
 				B62FDDB91B3C52CC00E9B88E /* Supporting Files */,
@@ -220,7 +230,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B62FDDC21B3C52CC00E9B88E /* ViewController.m in Sources */,
+				B62FDDE41B3C90AA00E9B88E /* HeaderView.m in Sources */,
 				B62FDDBF1B3C52CC00E9B88E /* AppDelegate.m in Sources */,
+				B62FDDE11B3C585100E9B88E /* CustomCell.m in Sources */,
 				B62FDDBC1B3C52CC00E9B88E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
